@@ -15,10 +15,18 @@
 
 body{
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
     background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
 }
 
 .calculator{
@@ -94,11 +102,12 @@ button:hover{
 }
 </style>
 </head>
-
 <body>
-<div style="display:flex; justify-content:center; align-items:center; margin-bottom:20px;">
+
+<div class="header">
     <h1>System Siege Calculator</h1>
 </div>
+
 <div class="calculator">
 
 <input type="text" id="display" readonly>
